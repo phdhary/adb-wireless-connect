@@ -14,9 +14,15 @@ adb_connect ()
   adb connect $device_ip;
 }
 
+adb_devices ()
+{
+  adb devices;
+}
+
 main ()
 {
   adb_connect;
+  adb_devices;
 }
 
 main
