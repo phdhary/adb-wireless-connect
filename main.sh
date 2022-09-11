@@ -21,6 +21,8 @@ adb_devices ()
 
 main ()
 {
+  adb_tcpip;
+  sleep 3;
   adb_connect;
   adb_devices;
 }
